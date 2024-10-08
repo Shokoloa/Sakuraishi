@@ -1,0 +1,37 @@
+[
+    {
+        "name": "HTML",
+        "img": "html5",
+        "level": "Intermédiaire"
+    },
+    {
+        "name": "CSS",
+        "img": "css3",
+        "level": "Intermédiaire"
+    },
+    {
+        "name": "JavaScript",
+        "img": "javascript",
+        "level": "Intermédiaire"
+    },
+    {
+        "name": "Python",
+        "img": "python",
+        "level": "Débutant"
+    },
+    {
+        "name": "Arduino C",
+        "img": "arduino",
+        "level": "Débutant"
+    },
+    {
+        "name": "Vite.js",
+        "img": "vite",
+        "level": "Intermédiaire"
+    },
+    {
+        "name": "Discord.js",
+        "img": "djs",
+        "level": "Intermédiaire"
+    }
+]
