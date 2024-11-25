@@ -2,6 +2,10 @@
     "version": 2,
     "rewrites": [
         {
+            "source": "/.well-known/discord",
+            "destination": "/api/discord"
+        },
+        {
             "source": "/(.*)",
             "destination": "/index.html"
         }
