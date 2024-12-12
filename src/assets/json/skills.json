@@ -1,5 +1,20 @@
 [
     {
+        "name": "Français",
+        "img": "fr",
+        "level": "Langue maternelle"
+    },
+    {
+        "name": "Anglais",
+        "img": "en",
+        "level": "Niveau B2"
+    },
+    {
+        "name": "Espagnol",
+        "img": "es",
+        "level": "Niveau C2"
+    },
+    {
         "name": "HTML",
         "img": "html5",
         "level": "Intermédiaire"
@@ -17,11 +32,6 @@
     {
         "name": "Python",
         "img": "python",
-        "level": "Débutant"
-    },
-    {
-        "name": "Arduino C",
-        "img": "arduino",
         "level": "Débutant"
     },
     {

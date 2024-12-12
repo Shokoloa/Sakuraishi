@@ -1,12 +1,12 @@
 @font-face {
-  src: url(../fonts/Poppins.ttf);
-  font-family: poppins;
+  src: url(../fonts/Inter.ttf);
+  font-family: inter;
   font-display: swap;
 }
 
 @font-face {
-  src: url(../fonts/Inter.ttf);
-  font-family: inter;
+  src: url(../fonts/Montserrat.ttf);
+  font-family: mont;
   font-display: swap;
 }
 
@@ -16,6 +16,8 @@
   --text-grey: #d8d8d8;
   --light-black: #15151a;
   --light-blue: #4182aa;
+  --border-color: rgb(40 42 55/1);
+  --background-color: rgb(30 41 59/0.5);
 }
 
 *,
@@ -80,6 +82,10 @@ hr {
   border: none;
   border-bottom: 1px solid #88888855;
   margin: 7px 0;
+}
+
+#returnhome {
+  width: fit-content;
 }
 
 #returnhome svg {
@@ -258,15 +264,14 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: poppins;
-  font-size: 4rem;
+  font: 600 5rem inter;
   position: absolute;
   top: -10%;
 }
 
 .hero h1:nth-child(1) {
   color: transparent;
-  -webkit-text-stroke: 2px var(--light-blue);
+  -webkit-text-stroke: 3px var(--light-blue);
 }
 
 .hero h1:nth-child(2) {
@@ -307,8 +312,7 @@ hr {
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-size: 14px;
-  font-family: inter;
+  font: 14px inter;
   text-align: center;
   margin: 70px 0 10px 0;
 }
@@ -333,9 +337,9 @@ hr {
 
 .box .title h2 {
   text-align: center;
-  font-family: poppins;
+  font: 15px mont;
+  margin-top: 10px;
   color: #fff;
-  font-size: 15px;
   -webkit-animation: mainFadeIn 2s forwards;
   -o-animation: mainFadeIn 2s forwards;
   animation: mainFadeIn 2s forwards;
@@ -402,15 +406,13 @@ hr {
 
 .projecttitle {
   margin: 3vh 0 5px 5vh;
-  font-size: 20px;
-  font-family: poppins;
+  font: 20px mont;
   color: var(--text-white);
 }
 
 .projecttitle p {
   margin: 10px 0 0 0;
-  font-size: 14px;
-  font-family: inter;
+  font: 14px inter;
   color: var(--text-grey);
 }
 
@@ -422,9 +424,8 @@ hr {
 }
 
 .project-card-container h1 {
-  font-family: poppins;
+  font: 25px mont;
   color: var(--text-white);
-  font-size: 25px;
   margin: 20px 0 30px 0;
 }
 
@@ -449,8 +450,7 @@ hr {
 }
 
 .project-card .content h2 {
-  font-family: poppins;
-  font-size: 20px;
+  font: 20px mont;
   color: var(--text-white);
   margin-bottom: 5px;
 }
@@ -464,8 +464,7 @@ hr {
 }
 
 .project-card .content p {
-  font-family: inter;
-  font-size: 13px;
+  font: 13px inter;
   width: 90%;
 }
 
@@ -488,8 +487,7 @@ hr {
   display: flex;
   align-items: center;
   flex-direction: row;
-  font-family: inter;
-  font-size: 10px;
+  font: 10px inter;
 }
 
 .project-card .footer span {
@@ -500,8 +498,7 @@ hr {
 }
 
 .project-card .footer .duration {
-  font-family: inter;
-  font-size: 11px;
+  font: 11px inter;
 }
 
 .project-card:hover {
@@ -524,22 +521,19 @@ hr {
 
 .slug h1 {
   color: var(--text-white);
-  font-size: 25px;
-  font-family: poppins;
+  font: 25px mont;
 }
 
 .slug p {
   color: var(--text-grey);
-  font-size: 15px;
-  font-family: inter;
+  font: 15px inter;
   margin: 10px 0 5vh;
 }
 
 .slug a {
   text-decoration: none;
   color: var(--text-white);
-  font-size: 17px;
-  font-family: poppins;
+  font: 17px mont;
   transition: all 500ms ease;
   margin-bottom: 20px;
 }
@@ -696,73 +690,64 @@ hr {
 
 .about {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .about h1 {
-  color: var(--text-white);
-  font-size: 25px;
-  font-family: poppins;
-  text-align: center;
-  margin-top: 2vh;
+  font: 30px mont;
+  margin-bottom: 20px;
 }
 
-.skills-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 0 35vh;
-}
-
-.skills-lang {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 0 10vh;
-}
-
-.skill {
-  width: 180px;
-  padding: 10px;
-  background-color: rgba(30, 41, 59, 0.5);
-  margin: 10px;
+.about .aboutme {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
   border-radius: 10px;
-  font-size: 16px;
+  width: 600px;
+  padding: 20px;
+  font: 500 16px inter;
+  color: var(--text-grey);
+  margin-bottom: 15vh;
+}
+
+.about .skills-list {
+  display: flex;
+  gap: 20px;
+}
+
+.about .skill {
+  padding: .5rem;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: calc(0.5rem - 2px);
   display: flex;
   align-items: center;
-  flex-direction: row;
-  transition: all 500ms ease;
+  position: relative;
 }
 
-.skill:hover {
-  background-color: rgba(30, 41, 59, 0.8);
-}
-
-.skill img {
-  margin: 0 10px 0 0;
-  width: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.8s ease;
-}
-
-.skill p {
-  display: flex;
-  flex-direction: column;
-  font-size: 16px;
+.about .skill-tooltip {
+  visibility: hidden;
+  background-color: var(--background-color);
   color: var(--text-white);
-  font-family: poppins;
-  margin: 0 -50px 0 0;
+  font: 400 13px inter;
+  border: 1px solid #88888855;
+  text-align: center;
+  border-radius: 5px;
+  padding: 7px 13px;
+  position: absolute;
+  margin-bottom: 7px;
+  width: 200px;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
 }
 
-.skill p span {
-  font-size: 13px;
-  font-family: inter;
+.about .skill:hover .skill-tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* 404 */
@@ -779,14 +764,12 @@ hr {
 }
 
 .cat-container h1 {
-  font-size: 30px;
-  font-family: poppins;
+  font: 30px mont;
   color: var(--text-white);
 }
 
 .cat-container p {
-  font-size: 15px;
-  font-family: inter;
+  font: 15px inter;
   color: var(--text-grey);
 }
 
@@ -797,8 +780,7 @@ hr {
   border: 2px solid #8a817c;
   border-radius: 8px;
   color: var(--text-white);
-  font-size: 15px;
-  font-family: poppins;
+  font: 15px mont;
   transition: all 500ms ease;
 }
 
