@@ -18,6 +18,7 @@
   --light-blue: #4182aa;
   --border-color: rgb(40 42 55/1);
   --background-color: rgb(30 41 59/0.5);
+  --background-color-1: rgb(27 44 70/1);
 }
 
 *,
@@ -203,6 +204,7 @@ hr {
 .customnav {
   display: flex;
   align-items: center;
+  margin-bottom: 5px;
 }
 
 .customnav ul {
@@ -405,14 +407,14 @@ hr {
 }
 
 .projecttitle {
-  margin: 3vh 0 5px 5vh;
-  font: 20px mont;
+  margin: 3vh 0 5px 0;
+  font: 25px mont;
   color: var(--text-white);
 }
 
 .projecttitle p {
   margin: 10px 0 0 0;
-  font: 14px inter;
+  font: 15px inter;
   color: var(--text-grey);
 }
 
@@ -424,7 +426,7 @@ hr {
 }
 
 .project-card-container h1 {
-  font: 25px mont;
+  font: 30px mont;
   color: var(--text-white);
   margin: 20px 0 30px 0;
 }
@@ -700,14 +702,52 @@ hr {
 }
 
 .about .aboutme {
-  background-color: var(--background-color);
-  border: 1px solid var(--border-color);
+  display: inline-block;
+  background-color: var(--background-color-1);
+  border: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
   border-radius: 10px;
   width: 600px;
   padding: 20px;
   font: 500 16px inter;
   color: var(--text-grey);
   margin-bottom: 15vh;
+}
+
+.about .aboutme::before {
+  background: conic-gradient(#0055ff, #0055ff 10%, #42b0c9, var(--border-color) 50%, #0055ff);
+  animation: rotate 6s linear infinite;
+  content: "";
+  height: 760%;
+  left: -50%;
+  position: absolute;
+  top: -300%;
+  width: 200%;
+  z-index: -2;
+}
+
+.about .aboutme::after {
+  background-color: var(--background-color-1);
+  border-radius: 10px;
+  content: "";
+  height: calc(100% - 2px);
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: calc(100% - 2px);
+  z-index: -1;
+}
+
+.hero .buttons .secondary-button {
+  font: 500 15px inter;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
 }
 
 .about .skills-list {
