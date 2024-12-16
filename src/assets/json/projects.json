@@ -1,7 +1,6 @@
 [
     {
         "name": "Arvalia",
-        "class": "best",
         "desc": "Explorez les mystères magiques d'Arvalia, un RPG fantastique épique où le destin du royaume repose entre vos mains.",
         "date": "Oct 11, 2023",
         "url": "https://arvalia.vercel.app",
@@ -9,39 +8,27 @@
     },
     {
         "name": "Saphira",
-        "class": "best",
         "desc": "Explorez la polyvalence ultime avec notre bot Discord ! Diverses fonctionnalités pour améliorer votre serveur, de la modération au divertissement, ce bot est votre partenaire idéal sur Discord.",
         "date": "Avr 27, 2022",
         "url": "https://saphira-bump.fr",
         "status": "op"
     },
     {
-        "name": "Morse",
-        "class": "other",
-        "desc": "Découvrez un projet pour convertir du texte en code Morse et vice versa, simplifiant la communication grâce à des codes sonores.",
-        "date": "Sep 30, 2023",
-        "url": "projects/morse",
-        "status": "op"
-    },
-    {
-        "name": "Binaire",
-        "class": "other",
-        "desc": "Explorez la simplicité de notre convertisseur texte en binaire, offrant une transformation rapide entre le langage humain et le langage machine.",
-        "date": "Sep 30, 2022",
-        "url": "projects/binary",
-        "status": "op"
+        "name": "Codeq",
+        "desc": "Codeq est une boîte à outils numérique, une plateforme tout-en-un pour simplifier, accélérer et améliorer le travail des développeurs. Son objectif : offrir des outils intelligents, collaboratifs et accessibles, conçus pour répondre aux besoins actuels tout en évoluant avec les tendances futures.",
+        "date": "Soon",
+        "url": "",
+        "status": "in"
     },
     {
         "name": "Falnix",
-        "class": "best",
-        "desc": "Découvrez des gameplays palpitants, des projets uniques comme un bot Discord et même un jeu vidéo !",
+        "desc": "Plongez dans un univers fascinant où passion et créativité se rencontrent ! Découvrez des gameplays palpitants qui vous tiendront en haleine, fruit d’un travail acharné et d’une imagination débordante.",
         "date": "Sep 22, 2019",
         "url": "https://falnix.vercel.app",
-        "status": "op"
+        "status": "up"
     },
     {
         "name": "VCPL",
-        "class": "other",
         "desc": "Explorez des sentiers passionnants, partagez votre passion pour le vélo de montagne et participez à des randonnées mémorables avec notre communauté dynamique de passionnés du tout-terrain.",
         "date": "Dec 21, 2023",
         "url": "https://vcpl.vercel.app",
@@ -49,8 +36,7 @@
     },
     {
         "name": "AstroBump",
-        "class": "other",
-        "desc": "Robot polyvalent sur Discord, créé par @nayloooo",
+        "desc": "AstroBump est un robot polyvalent pour Discord, qui vise à enrichir l'expérience des communautés. Que vous souhaitiez animer votre serveur, simplifier son administration ou renforcer la convivialité entre ses membres, AstroBump est fait pour vous !",
         "date": "Dec 10, 2024",
         "url": "https://astrobump.net",
         "status": "op"

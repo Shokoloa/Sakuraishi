@@ -10,7 +10,7 @@ export const About = () => {
                 <h1>À propos de moi</h1>
                 <section className="aboutme">
                     Jeune développeur Freelance de 16 ans et étudiant en STI2D, je suis passionné par la programmation, l’astronomie et la création d’expériences utilisateur uniques.
-                    <br />
+                    <br /><br />
                     Curieux et créatif, j’aime concevoir des solutions innovantes, explorer de nouvelles technologies et perfectionner des interfaces pour les rendre intuitives et engageantes.
                     <br />
                     Toujours motivé par l’apprentissage et l’amélioration continue, je cherche à allier technique et créativité pour offrir des projets à la fois fonctionnels et inspirants.

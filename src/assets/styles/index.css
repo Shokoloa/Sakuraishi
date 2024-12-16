@@ -12,8 +12,8 @@
 
 :root {
   --primary-color: #e5989b;
-  --text-white: #fff;
-  --text-grey: #d8d8d8;
+  --text-white: #f3f1f8;
+  --text-grey: #a1a5aa;
   --light-black: #15151a;
   --light-blue: #4182aa;
   --border-color: rgb(40 42 55/1);
@@ -40,7 +40,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #100d54;
+  background: #1b158f;
   border-radius: 5px;
 }
 
@@ -70,6 +70,15 @@
   z-index: -1000;
 }
 
+.snowflakes {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+
 .text:hover {
   cursor: default;
   -moz-user-select: none;
@@ -90,11 +99,14 @@ hr {
 }
 
 #returnhome svg {
-  width: 32px;
-  height: 32px;
-  color: #fff;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
   margin: 25px;
+}
+
+#returnhome svg path {
+  fill: var(--text-white);
 }
 
 .line {
@@ -116,8 +128,8 @@ hr {
   left: 0;
   background: linear-gradient(to bottom,
       rgba(255, 255, 255, 0) 0%,
-      #ffffff 75%,
-      #ffffff 100%);
+      var(--text-white) 75%,
+      var(--text-white) 100%);
   animation: drop 7s 0s infinite;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
@@ -383,14 +395,14 @@ hr {
 }
 
 .social-link svg {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   margin: 15px 10px;
   cursor: pointer;
 }
 
 .social-link svg path {
-  fill: #6c757d;
+  fill: var(--text-grey);
   transition: all 500ms ease;
 }
 
@@ -423,6 +435,7 @@ hr {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 5vh 0;
 }
 
 .project-card-container h1 {
@@ -442,17 +455,30 @@ hr {
 }
 
 .project-card {
-  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  max-width: 26rem;
   padding: 20px;
   margin: 1rem 0;
-  border: 1px solid #ffffff22;
-  background-color: rgba(30, 41, 59, 0.5);
-  border-radius: 0.7rem;
-  transition: all 500ms ease;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-color);
+  border-radius: 0.5rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .15s;
+}
+
+.project-card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 2px hsl(210.11764705882354 10% 3.9%), 0 0 0 calc(2px + 2px) var(--propertyColor), 0 0 #0000;
 }
 
 .project-card .content h2 {
-  font: 20px mont;
+  font: 25px mont;
   color: var(--text-white);
   margin-bottom: 5px;
 }
@@ -466,15 +492,8 @@ hr {
 }
 
 .project-card .content p {
-  font: 13px inter;
-  width: 90%;
-}
-
-.project-card hr {
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #88888855;
-  margin-top: 7px;
+  font: 500 14px inter;
+  color: var(--text-grey);
 }
 
 .project-card .footer {
@@ -489,23 +508,19 @@ hr {
   display: flex;
   align-items: center;
   flex-direction: row;
-  font: 10px inter;
+  font: 12px inter;
 }
 
 .project-card .footer span {
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  margin-right: 3px;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
 }
 
 .project-card .footer .duration {
-  font: 11px inter;
-}
-
-.project-card:hover {
-  cursor: pointer;
-  background-color: rgba(30, 41, 59, 0.8);
+  font: 600 12px inter;
+  color: var(--text-grey);
 }
 
 .project-card:hover .content h2 svg {
