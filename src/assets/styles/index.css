@@ -216,6 +216,7 @@ hr {
 .customnav {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 5px;
 }
 
@@ -231,7 +232,7 @@ hr {
   font-family: inter;
   margin: 7px;
   color: var(--text-white);
-  transition: all 300ms ease;
+  cursor: pointer;
 }
 
 .navlink::before {
@@ -251,11 +252,6 @@ hr {
 .navlink:hover::before {
   transform-origin: left;
   transform: scaleX(1);
-}
-
-.navlink:hover {
-  color: var(--text-grey);
-  cursor: pointer;
 }
 
 /* Hero */
@@ -322,17 +318,12 @@ hr {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  font: 14px inter;
   text-align: center;
-  margin: 70px 0 10px 0;
+  margin: 80px 0 10px 0;
 }
 
 .box {
-  width: 150px;
+  width: fit-content;
 }
 
 .box .title {
@@ -349,11 +340,9 @@ hr {
   display: flex;
 }
 
-.box .title h2 {
-  text-align: center;
-  font: 15px mont;
-  margin-top: 10px;
-  color: #fff;
+.box .title p {
+  font: 600 15px inter;
+  color: var(--text-white);
   -webkit-animation: mainFadeIn 2s forwards;
   -o-animation: mainFadeIn 2s forwards;
   animation: mainFadeIn 2s forwards;
@@ -753,10 +742,6 @@ hr {
   top: 1px;
   width: calc(100% - 2px);
   z-index: -1;
-}
-
-.hero .buttons .secondary-button {
-  font: 500 15px inter;
 }
 
 @keyframes rotate {

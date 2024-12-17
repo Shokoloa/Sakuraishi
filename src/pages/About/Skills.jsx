@@ -7,6 +7,7 @@ import djs from '../../assets/images/icons/djs.webp';
 import FlagFR from '../../assets/images/icons/flag_fr.webp';
 import FlagBR from '../../assets/images/icons/flag_br.webp';
 import FlagSP from '../../assets/images/icons/flag_sp.webp';
+import { useTranslation } from 'react-i18next';
 
 const getImage = (imageName) => {
     switch (imageName) {
@@ -34,6 +35,8 @@ const getImage = (imageName) => {
 };
 
 export const Skills = ({ data }) => {
+    const { i18n } = useTranslation();
+
     return (
         <div className="skills-list">
             {data.map((skill, index) => {
@@ -43,7 +46,7 @@ export const Skills = ({ data }) => {
                 return (
                     <article className="skill" key={index}>
                         <img src={image} draggable={false} width={50} height={50} alt="Skill" />
-                        <span className="skill-tooltip">{skill.name} | {skill.level}</span>
+                        <span className="skill-tooltip">{skill.name?.fr ? i18n.language === 'en' ? skill.name.en : skill.name.fr : skill.name} | {i18n.language === 'en' ? skill.level.en : skill.level.fr}</span>
                     </article>
                 );
             })}

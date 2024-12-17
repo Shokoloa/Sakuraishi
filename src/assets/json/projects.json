@@ -1,42 +1,60 @@
 [
     {
         "name": "Arvalia",
-        "desc": "Explorez les mystères magiques d'Arvalia, un RPG fantastique épique où le destin du royaume repose entre vos mains.",
-        "date": "Oct 11, 2023",
-        "url": "https://arvalia.vercel.app",
-        "status": "of"
+        "desc": {
+            "fr": "Explorez les mystères magiques d'Arvalia, un RPG fantastique épique où le destin du royaume repose entre vos mains.",
+            "en": "Explore the magical mysteries of Arvalia, an epic fantasy RPG where the fate of the kingdom rests in your hands."
+        },
+        "date": "Soon...",
+        "url": null,
+        "status": "in"
     },
     {
         "name": "Saphira",
-        "desc": "Explorez la polyvalence ultime avec notre bot Discord ! Diverses fonctionnalités pour améliorer votre serveur, de la modération au divertissement, ce bot est votre partenaire idéal sur Discord.",
+        "desc": {
+            "fr": "Explorez la polyvalence ultime avec notre bot Discord ! Diverses fonctionnalités pour améliorer votre serveur, de la modération au divertissement, ce bot est votre partenaire idéal sur Discord.",
+            "en": "Explore the ultimate versatility with our Discord bot! Various features to enhance your server, from moderation to entertainment, this bot is your perfect partner on Discord."
+        },
         "date": "Avr 27, 2022",
         "url": "https://saphira-bump.fr",
         "status": "op"
     },
     {
         "name": "Codeq",
-        "desc": "Codeq est une boîte à outils numérique, une plateforme tout-en-un pour simplifier, accélérer et améliorer le travail des développeurs. Son objectif : offrir des outils intelligents, collaboratifs et accessibles, conçus pour répondre aux besoins actuels tout en évoluant avec les tendances futures.",
-        "date": "Soon",
-        "url": "",
+        "desc": {
+            "fr": "Codeq est une boîte à outils numérique, une plateforme tout-en-un pour simplifier, accélérer et améliorer le travail des développeurs. Son objectif : offrir des outils intelligents, collaboratifs et accessibles, conçus pour répondre aux besoins actuels tout en évoluant avec les tendances futures.",
+            "en": "Codeq is a digital toolbox, an all-in-one platform to simplify, accelerate and improve the work of developers. Its goal: to offer intelligent, collaborative and accessible tools, designed to meet current needs while evolving with future trends."
+        },
+        "date": "Soon...",
+        "url": null,
         "status": "in"
     },
     {
         "name": "Falnix",
-        "desc": "Plongez dans un univers fascinant où passion et créativité se rencontrent ! Découvrez des gameplays palpitants qui vous tiendront en haleine, fruit d’un travail acharné et d’une imagination débordante.",
-        "date": "Sep 22, 2019",
+        "desc": {
+            "fr": "Plongez dans un univers fascinant où passion et créativité se rencontrent ! Découvrez des gameplays palpitants qui vous tiendront en haleine, fruit d’un travail acharné et d’une imagination débordante.",
+            "en": "Dive into a fascinating universe where passion and creativity meet! Discover thrilling gameplays that will keep you on the edge of your seat, the result of hard work and boundless imagination."
+        },
+        "date": "Sep 22, 2024",
         "url": "https://falnix.vercel.app",
         "status": "up"
     },
     {
         "name": "VCPL",
-        "desc": "Explorez des sentiers passionnants, partagez votre passion pour le vélo de montagne et participez à des randonnées mémorables avec notre communauté dynamique de passionnés du tout-terrain.",
+        "desc": {
+            "fr": "Explorez des sentiers passionnants, partagez votre passion pour le vélo de montagne et participez à des randonnées mémorables avec notre communauté dynamique de passionnés du tout-terrain.",
+            "en": "Explore exciting trails, share your passion for mountain biking and go on memorable rides with our vibrant community of off-road enthusiasts."
+        },
         "date": "Dec 21, 2023",
         "url": "https://vcpl.vercel.app",
         "status": "op"
     },
     {
         "name": "AstroBump",
-        "desc": "AstroBump est un robot polyvalent pour Discord, qui vise à enrichir l'expérience des communautés. Que vous souhaitiez animer votre serveur, simplifier son administration ou renforcer la convivialité entre ses membres, AstroBump est fait pour vous !",
+        "desc": {
+            "fr": "AstroBump est un robot polyvalent pour Discord, qui vise à enrichir l'expérience des communautés. Que vous souhaitiez animer votre serveur, simplifier son administration ou renforcer la convivialité entre ses membres, AstroBump est fait pour vous !",
+            "en": "AstroBump is a versatile bot for Discord, which aims to enrich the community experience. Whether you want to animate your server, simplify its administration or strengthen the conviviality between its members, AstroBump is made for you!"
+        },
         "date": "Dec 10, 2024",
         "url": "https://astrobump.net",
         "status": "op"

@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // Components
 import { Background } from "./components/Background";
 import { ScrollToTop } from "./components/ScrollToTop";
+import { Startup } from "./components/Startup";
 
 // Pages
 import { Home } from "./pages/Home";
@@ -30,6 +31,7 @@ export const App = () => {
     <Router>
       <div className="text" style={{ transitionDuration: '1s' }}>
         <Background />
+        <Startup />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

@@ -20,8 +20,16 @@
 
     /* Home */
 
-    .box .title h2 {
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .box .title p {
         font-size: 14px;
+    }
+
+    .container {
+        margin: 60px 0 20px 0;
     }
 
     /* Projects */
@@ -69,24 +77,34 @@
 
     /* About */
 
-    .skills-list,
-    .skills-lang {
-        padding: 0 10px;
+    .about h1 {
+        font: 25px mont;
+        margin-bottom: 20px;
     }
 
-    .skills h1 {
-        margin-top: 0;
+    .about .aboutme {
+        width: 325px;
+        font: 500 13px inter;
+        margin-bottom: 10vh;
     }
 
-    .skill {
-        width: 140px;
-        padding: 7px;
-        margin: 7px;
+    .about .skills-list {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
-    .skill img {
-        margin: 0 5px 0 0;
+    .about .skill img {
         width: 35px;
+        height: 35px;
+    }
+
+    .about .skill-tooltip {
+        display: none;
+    }
+
+    .about .skill:hover .skill-tooltip {
+        visibility: hidden;
+        opacity: 0;
     }
 
     /* 404 */

@@ -2,9 +2,13 @@ import { useEffect, useState } from "react";
 import { useLocation } from 'react-router-dom';
 import gsap from "gsap";
 import img from '../assets/images/404.svg';
+import { useNavigate } from 'react-router-dom';
+import { useTranslation, Trans } from 'react-i18next';
 
 export const NotFound = () => {
     const [svgContent, setSvgContent] = useState(null);
+    const { t } = useTranslation();
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchSVG = async () => {
@@ -81,9 +85,9 @@ export const NotFound = () => {
                     <div className="row anim-2" style={{ '--duration': '2s' }}>
                         <div><div dangerouslySetInnerHTML={{ __html: svgContent }} /></div>
                         <div className="anim-3" style={{ '--duration': '2s' }}>
-                            <h1>Oops! Vous vous êtes perdus.</h1>
-                            <p>La page <code id="url">{useLocation().pathname}</code> n'existe pas. Comment êtes-vous arrivé ici est un mystère.</p>
-                            <button onClick={() => window.location.href = '/'}>Retourner sur le bon chemin</button>
+                            <h1>{t('notFound.title')}</h1>
+                            <p><Trans i18nKey="notFound.description" components={{ code: <code id="url">{useLocation().pathname}</code> }} /></p>
+                            <button onClick={() => navigate('/')}>{t('notFound.button')}</button>
                         </div>
                     </div>
                 </div>

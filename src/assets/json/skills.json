@@ -1,47 +1,83 @@
 [
     {
-        "name": "Français",
+        "name": {
+            "fr": "Français",
+            "en": "French"
+        },
         "img": "fr",
-        "level": "Langue maternelle"
+        "level": {
+            "fr": "Langue maternelle",
+            "en": "Native language"
+        }
     },
     {
-        "name": "Anglais",
+        "name": {
+            "fr": "Anglais",
+            "en": "English"
+        },
         "img": "en",
-        "level": "Niveau B2"
+        "level": {
+            "fr": "Niveau B2",
+            "en": "B2 Level"
+        }
     },
     {
-        "name": "Espagnol",
+        "name": {
+            "fr": "Espagnol",
+            "en": "Spanish"
+        },
         "img": "es",
-        "level": "Niveau C2"
+        "level": {
+            "fr": "Niveau C2",
+            "en": "C2 Level"
+        }
     },
     {
         "name": "HTML",
         "img": "html5",
-        "level": "Intermédiaire"
+        "level": {
+            "fr": "Intermédiaire",
+            "en": "Intermediate"
+        }
     },
     {
         "name": "CSS",
         "img": "css3",
-        "level": "Intermédiaire"
+        "level": {
+            "fr": "Intermédiaire",
+            "en": "Intermediate"
+        }
     },
     {
         "name": "JavaScript",
         "img": "javascript",
-        "level": "Intermédiaire"
+        "level": {
+            "fr": "Intermédiaire",
+            "en": "Intermediate"
+        }
     },
     {
         "name": "Python",
         "img": "python",
-        "level": "Débutant"
+        "level": {
+            "fr": "Intermédiaire",
+            "en": "Intermediate"
+        }
     },
     {
-        "name": "Vite.js",
+        "name": "Vite.JS",
         "img": "vite",
-        "level": "Intermédiaire"
+        "level": {
+            "fr": "Intermédiaire",
+            "en": "Intermediate"
+        }
     },
     {
-        "name": "Discord.js",
+        "name": "Discord.JS",
         "img": "djs",
-        "level": "Intermédiaire"
+        "level": {
+            "fr": "Intermédiaire",
+            "en": "Intermediate"
+        }
     }
 ]
